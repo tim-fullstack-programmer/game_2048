@@ -16,11 +16,17 @@
         body {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             min-height: 100vh;
             background-color: #D3D3D3;
             padding: 15px;
             overflow-x: hidden;
+        }
+        @media (max-height: 700px) {
+            body {
+                align-items: flex-start;
+                padding-top: 10px;
+            }
         }
         .container {
             width: 100%;
